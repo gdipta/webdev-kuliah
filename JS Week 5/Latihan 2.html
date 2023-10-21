@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gede Dipta</title>
+</head>
+<body>
+    <h1>Javascript kann das Bild ändern</h1>
+    <img id="myImage" onclick="chgImage()" src="proyek2.jpg" width="180" height="100" alt="foto">
+    <p>Klicken Sie auf Bild, um das Bild zu ändern</p>
+    <script>
+        function chgImage(){
+            var image = document.getElementById("myImage");
+            if (image.src.match("proyek2.jpg")){
+                image.src ="caro2.jpg";
+            }
+            else{
+                image.src ="proyek2.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
